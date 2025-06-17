@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Birthdays</title>
+    <link rel="stylesheet" href="{% static 'birthday/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo" onclick="window.location.href='/birthday'"> 
+        <img src="{% static 'birthday/logo.png' %}" alt="Birthday Reminder Logo" width="160" height="auto">
+    </div>
+    <div class="addButton inside fontF" onclick="window.location.href='addBdayHtml'"> 
+        <img src="{% static 'birthday/add_icon.png' %}" alt="Birthday Reminder Logo" width="24" height="auto">
+        Add Birthday 
+    </div>
+    <h2 class="fontF"> Here is the list of people's birthdays for this month </h2>
+
+
+{{ content|safe }}
+</body>
+</html>

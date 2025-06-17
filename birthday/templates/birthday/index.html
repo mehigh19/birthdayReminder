@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday App</title>
+    <link rel="stylesheet" href="{% static 'birthday/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo" onclick="window.location.href=''"> 
+        <img src="{% static 'birthday/logo.png' %}" alt="Birthday Reminder Logo" width="160" height="auto">
+    </div>
+    <div class="addButton inside fontF" onclick="window.location.href='addBdayHtml'"> 
+        <img src="{% static 'birthday/add_icon.png' %}" alt="Birthday Reminder Logo" width="24" height="auto">
+        Add Birthday 
+    </div>
+    <div class="secondButton inside fontF" onclick="window.location.href='upComing'">
+        <img src="{% static 'birthday/view_icon.png' %}" alt="Birthday Reminder Logo" width="24" height="auto">
+        Upcoming Birthdays 
+    </div>
+    <h2 class="fontF"> Here you can see the list of peoples that are already added their birthdays. </h2>
+
+    <br>
+    {{ content|safe }}
+</body>
+</html>

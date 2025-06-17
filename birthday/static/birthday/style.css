@@ -1,0 +1,172 @@
+    body{
+        background-color: rgba(46, 73, 181, 0.571);
+        height: 100%;
+        width: 100%;
+    }
+
+    h2{
+        position: absolute;
+        top: 20px;
+        left: 550px;
+    }
+
+    .div_container {
+        position: relative;
+        top: 175px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 1px;
+    }
+    
+    .div_line {
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
+
+    .logo{
+        position: fixed;
+        top: -18px;
+        left: 18px;
+        z-index: 9999;
+        font-size: xx-large;
+    }
+
+    .fontF{
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;           
+    }
+
+    .test{
+        position: relative;
+        top: 200px;
+        left: 50px;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    }
+
+    .listBdays{
+        font-size: larger;
+    }
+
+    .addButton{
+        position: fixed;
+        z-index: 9999;
+        top: 15px;
+        left: 205px;
+        margin: 10px;
+        width: 160px;
+        height: 32px;
+        background-color: #9B59B6;
+        font-size:medium;
+        color: #D3D3D3;
+        border-radius: 12px;
+        gap: 10px;
+    }
+
+    .addButton:hover{
+        background-color: #BB8FCE;
+    }
+
+    .secondButton {
+        position: fixed;
+        z-index: 9999;
+        top: 55px;
+        left: 205px;
+        margin: 10px;
+        width: 215px;
+        height: 32px;
+        background-color: #6A4BA1;
+        font-size: medium;
+        color: #D3D3D3;
+        border-radius: 12px;
+        gap: 10px;
+    }
+    
+    .secondButton:hover {
+        background-color: #8C70D6;
+    }
+
+    .addPosition{
+        position: fixed;
+        left: 50px;
+    }
+
+    .addBirthday{
+        top: 200px;
+        font-size: larger;
+    }
+
+    .buttonToAdd{
+        all: unset;
+
+        position: relative;
+        top: 255px;
+        left: 330px;
+        width: 80px;
+        height: 80px;
+        border-radius: 12px;
+        background-color: #9B59B6;
+        
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttonToAdd:hover {
+    background-color: #BB8FCE;
+    }
+
+    .nameField{
+        top: 260px;
+    }
+
+    .dateField{
+        top: 310px;
+    }
+
+    .action-button {
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .delete-button {
+        background-image: url('/static/birthday/delete_icon.png');
+    }
+
+    .edit-button {
+        background-image: url('/static/birthday/edit_icon.png');
+    }
+
+    .inside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 

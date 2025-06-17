@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <style>
+    body{
+        background-color: rgba(46, 73, 181, 0.571);
+    }
+
+    h2{
+        position: absolute;
+        top: 70px;
+        left: 20px;
+    }
+
+    .logo{
+        position: absolute;
+        top: 9px;
+        left: 6px;
+
+        font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;            
+        font-size: x-large;
+    }
+
+    .addButton{
+        position: fixed;
+        top: -2px;
+        left: 208px;
+        margin: 10px;
+        width: 170px;
+        height: 30px;
+        background-color: #9B59B6;
+        font-size:medium;
+        color: #D3D3D3;
+        border-radius: 12px;
+    }
+
+    .addButton:hover{
+        background-color: #BB8FCE;
+    }
+
+    .secondButton {
+        position: fixed;
+        top: -2px;
+        left: 390px;
+        margin: 10px;
+        width: 170px;
+        height: 30px;
+        background-color: #6A4BA1;
+        font-size: medium;
+        color: #D3D3D3;
+        border-radius: 12px;
+    }
+    
+    .secondButton:hover {
+        background-color: #8C70D6;
+    }
+
+    .inside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    </style>
+
+</head>
+<body>
+
+    <div class="logo"> Birthday Reminder </div>
+    <div class="addButton inside"> Add birthday </div>
+    <div class="secondButton inside"> Upcoming Birthdays </div>
+    <h2> Here you can see the list of peoples that are already added their birthdays. </h2>
+
+</body>
+</html>

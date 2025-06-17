@@ -1,0 +1,7 @@
+Mihai, 1998-09-19
+test, 2025-06-01
+Tegler Mihai Marian, 1998-09-19
+Mihai testeaza, 2025-06-15
+Django test, 2025-06-15
+test test, 2024-06-15
+aici setesteaza, 2026-06-15

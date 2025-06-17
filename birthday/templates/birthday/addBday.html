@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Birthday</title>
+    <link rel="stylesheet" href="{% static 'birthday/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="logo" onclick="window.location.href='/birthday'"> 
+        <img src="{% static 'birthday/logo.png' %}" alt="Birthday Reminder Logo" width="160" height="auto">
+    </div>
+    <div class="secondButton inside fontF" onclick="window.location.href='upComing'">
+        <img src="{% static 'birthday/view_icon.png' %}" alt="Birthday Reminder Logo" width="24" height="auto">
+        Upcoming Birthdays 
+    </div>
+
+    <form action="addBday" method="get" id="addBday">
+        <h2 class="fontF"> You can add here the name and birthday</h2>
+        <h3 class="addBirthday addPosition fontF"> Add Birthday </h3>
+            <div class="nameField addPosition">
+                <input name="name" type="text" placeholder="Name" required>
+            </div>
+            <div class="dateField addPosition">
+                <input name="date" type="date" required>
+            </div>
+            <button class="buttonToAdd" type="submit">Add</button>
+    </form>
+    <script>
+        addButton=document.getElementById('add')
+    </script>
+
+</body>
+</html>
